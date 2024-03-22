@@ -8,4 +8,5 @@ a portfolio website using css,html and javascript
 ![images3](https://github.com/komalka20/portfolio/assets/164464638/d0cf0ea9-769c-4190-a1e2-9ded22d95093)
 ![IMG-20240318-WA0020](https://github.com/komalka20/portfolio/assets/164464638/21a76cde-3394-459d-819e-0bc65a23d6ff)
 [komalCV.pdf](https://github.com/komalka20/portfolio/files/14717954/komalCV.pdf)
+![b](https://github.com/komalka20/portfolio/assets/164464638/e6c582cd-0eec-4783-9f03-950445f7924d)
 
