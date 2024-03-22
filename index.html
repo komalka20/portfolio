@@ -1,0 +1,154 @@
+<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>portfolio</title>
+<link rel="stylesheet" href="style1.css">
+<script src="https://kit.fontawesome.com/2e4064010c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="header">
+		<div class="container">
+			<nav>
+				<ul>
+				     <li><a href="#header">Home</a></li>
+				     <li><a href="#about">About</a></li>
+				     <li><a href="#services">Services</a></li>
+				     <li><a href="#portfolio">Portfolio</a></li>
+				     <li><a href="#contact">Contact</a></li>
+				     
+				</ul>
+				
+			</nav>
+			<div class="header-text">
+				<p> Student of BCA </p>
+				<h1> KOMAL KAUSHIK </h1>
+
+			</div>
+		</div>
+	</div>
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="img/background.jpg">
+				</div>
+				<div class="about-col-2">
+					<h1 class="sub-title"> About Me <h1>
+					<p> I am Komal Kaushik, student of BCA. I am in BCA 3rd year.<br>
+						 I am pursuing BCA from Guru Gobind Singh College for Womens sec-26,CHD.<br>
+						I am also a Cadet of NCC Naval Wing. </p> 
+				
+
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="services">
+		<div class="container">
+			<h1 class="sub-title"> My Services </h1>
+			<div class="services-list">
+				<div>
+					<i class="fa-solid fa-code"></i>
+					<h2>Web Design</h2>
+					<p>I am a web designer, I participate in a intercollege competetion of website making.I  like frontend designing. </p>
+					<a href="#">Learn more</a>
+				</div>
+				<div>
+					<i class="fa-brands fa-app-store"></i>
+					<h2>App Design</h2>
+					<p>I am a web designer, I participate in a intercollege competetion of website making.I  like frontend designing. </p>
+					<a href="#">Learn more</a>
+				</div>
+				<div>
+					<i class="fa-solid fa-p"></i>
+					<h2>presentation</h2>
+					<p>I like to make powerpoint presentation, I participate in a intercollege competetion of Presentation. </p>
+					<a href="#">Learn more</a>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div id="portfolio">
+		<div class="container">
+			<h1 class="sub-title"> My Work </h1>
+			<div class="work-list">
+				<div class="work-list">
+				<div class="work">
+					<img src="img/images.jpg">
+					<div class="layer">
+						<h3>Social Media App</h3>
+						<p>That connects you to the talented people around the world.<br> Doewnload it from play store.</p>
+						<a href="#"><i class="fa-solid fa-link"></i></a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="img/images1.jpg">
+					<div class="layer">
+						<h3>Musical App</h3>
+						<p>That connects you to the talented people around the world.<br> Doewnload it from play store.</p>
+						<a href="#"><i class="fa-solid fa-link"></i></a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="img/images3.jpg">
+					<div class="layer">
+						<h3>Online Shopping App</h3>
+						<p>That connects you to the talented people around the world.<br> Doewnload it from play store.</p>
+						<a href="#"><i class="fa-solid fa-link"></i></a>
+					</div>
+				</div>
+				
+					
+			
+		</div>
+	</div>
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-left">
+					<h1 class="sub-title">Contact Me</h1>
+					<p><i class="fa-solid fa-paper-plane"></i>komalka@39gmail.com</p>
+					<p><i class="fa-solid fa-square-phone"></i>7658836689</p>
+					<div class="social-icons">
+						<a href=""><i class="fa-brands fa-facebook"></i></a>
+						<a href=""><i class="fa-brands fa-instagram"></i></a>
+						<a href=""><i class="fa-brands fa-linkedin"></i></a>
+					</div>
+					<a href="img/komalCV.pdf" download class="btn btn2">Download CV</a>
+				</div>
+				<div class="contact-right">
+					<form name="submit-to-google-sheet">
+						<input type="text" name="Name" placeholder="Your Name" required>
+						<input type="email" name="Email" placeholder="Your Email" required>
+						<textarea name="Message"rows="6" placeholder="Yourr Message"></textarea>
+						<button type="submit" class="btn btn2">Submit</button>
+					</form>
+					<span id="msg"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxDwifed5j3PXQX4ZiFZhpjMgmaJeqC3bUywls9nuypzymr63uHb2g5mQ5gsEZsT8H_/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+				msg.innerHTML= "Message sent successfully"
+				
+			})
+			form.reset()
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+
+</html>
